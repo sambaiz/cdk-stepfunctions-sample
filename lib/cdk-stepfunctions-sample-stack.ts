@@ -4,7 +4,7 @@ import * as tasks from '@aws-cdk/aws-stepfunctions-tasks';
 import { Function, Code, Runtime } from '@aws-cdk/aws-lambda';
 import * as path from 'path'
 
-export class CdkStepfunctionSampleStack extends cdk.Stack {
+export class CdkStepfunctionsSampleStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 

@@ -1,4 +1,4 @@
-module github.com/sambaiz/cdk-stepfunction-sample/lib/lambda/makeSummary
+module github.com/sambaiz/cdk-stepfunctions-sample/lib/lambda/makeSummary
 
 go 1.16
 

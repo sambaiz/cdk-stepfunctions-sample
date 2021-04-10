@@ -1,8 +1,8 @@
 {
-  "name": "cdk-stepfunction-sample",
+  "name": "cdk-stepfunctions-sample",
   "version": "0.1.0",
   "bin": {
-    "cdk-stepfunction-sample": "bin/cdk-stepfunction-sample.js"
+    "cdk-stepfunctions-sample": "bin/cdk-stepfunctions-sample.js"
   },
   "scripts": {
     "build": "tsc && cd lib/lambda/fetchScore && GOARCH=amd64 GOOS=linux go build *.go && cd ../makeSummary && GOARCH=amd64 GOOS=linux go build *.go",

@@ -1,4 +1,4 @@
-module github.com/sambaiz/cdk-stepfunction-sample/lib/lambda/fetchScore
+module github.com/sambaiz/cdk-stepfunctions-sample/lib/lambda/fetchScore
 
 go 1.16
 

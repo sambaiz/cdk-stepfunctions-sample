@@ -1,4 +1,4 @@
-## cdk-stepfunction-sample
+## cdk-stepfunctions-sample
 
 ```
 $ npm install
