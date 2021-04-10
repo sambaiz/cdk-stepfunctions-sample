@@ -5,23 +5,23 @@
     "cdk-stepfunction-sample": "bin/cdk-stepfunction-sample.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cd lib/lambda/fetchScore && GOARCH=amd64 GOOS=linux go build *.go && cd ../makeSummary && GOARCH=amd64 GOOS=linux go build *.go",
     "watch": "tsc -w",
-    "test": "jest",
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "1.88.0",
-    "@types/jest": "^26.0.10",
+    "@aws-cdk/assert": "1.97.0",
     "@types/node": "10.17.27",
-    "jest": "^26.4.2",
-    "ts-jest": "^26.2.0",
-    "aws-cdk": "1.88.0",
+    "aws-cdk": "1.97.0",
     "ts-node": "^9.0.0",
     "typescript": "~3.9.7"
   },
   "dependencies": {
-    "@aws-cdk/core": "1.88.0",
+    "@aws-cdk/aws-glue": "^1.97.0",
+    "@aws-cdk/aws-lambda": "^1.97.0",
+    "@aws-cdk/aws-stepfunctions": "^1.96.0",
+    "@aws-cdk/aws-stepfunctions-tasks": "^1.97.0",
+    "@aws-cdk/core": "1.97.0",
     "source-map-support": "^0.5.16"
   }
 }
